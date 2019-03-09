@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+这个项目的技术栈：react+antd+bizcharts
+
 ## Available Scripts
 
 In the project directory, you can run:
