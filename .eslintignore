@@ -1,0 +1,10 @@
+tmp/
+temp/
+build/
+.build/
+.*-cache/
+.idea/
+*.log
+*.iml
+/coverage/
+test/coverage/
