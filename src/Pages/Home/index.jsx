@@ -5,6 +5,8 @@ import Totalchart from '../../Components/bizchars/totalAnalyze.jsx';
 import Picktime from '../../Components/picktime.jsx';
 import ListRender from '../../Components/listRender.jsx';
 import PopView from '../Popview/index.jsx';
+import Drawit from '../../Components/china-map/drawit.jsx';
+
 import './index.css';
 
 class Home extends Component {
@@ -37,7 +39,10 @@ class Home extends Component {
           <Col className="changeHeight" span={8}>
             <h2>车联网大数据应用平台</h2>
             <Picktime />
-            <div style={{ height: '33%' }}>aaa</div>
+            {/* 这里地图加一个回退按钮，以防误点之后，无法返回到全国地图 */}
+            <div style={{ height: '33%' }}>
+              <Drawit />
+            </div>
             <div style={{ height: '33%' }}>
               <p>故障数量</p>
               <p>{this.state.breakdownNumber}</p>

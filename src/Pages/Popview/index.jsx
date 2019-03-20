@@ -9,9 +9,7 @@ class PopView extends React.Component {
   }
 
   componentWillMount(){
-    console.log('window:'+window.screen.availHeight);
     let height = window.screen.availHeight;
-    console.log('height:'+height)
     this.setState({windowHeight:height},()=>{console.log('state:'+this.state.windowHeight);});
     //setState是异步的更新，不能直接setState后就改变！
 }
